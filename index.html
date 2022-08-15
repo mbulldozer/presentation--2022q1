@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<a href="https://revealjs.com">
+						<img src="./images/head.jpg" alt="logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<h3>Angular vs React</h3>
+					<p>
+						<small>Created by <a href="https://github.com/mbulldozer">Aliaksandr Pauliukavets</a> for  <a href="https://rs.school">RS School</a></small>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h3>The Overview</h3>
+					</section>
+					<section>
+						<h3>Angular</h3>
+						<ul>
+							<li>Open-sourced JavaScript framework</li>
+							<li>Launched in September 2016</li>
+							<li>Managed by Google</li>
+							<li>For web and mobile</li>
+							<li>TypeScript-based</li>
+						</ul>
+					</section>
+					<section>
+						<h3>React</h3>
+						<ul>
+							<li>JavaScript library for UI development</li>
+							<li>Introduced in May 2013</li>
+							<li>Managed by Facebook</li>
+							<li>For web and mobile</li>
+							<li>Virtual DOM</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h3>Usage</h3>
+					<img src="./images/usage.png" alt="usage" style="height: 300px; margin: 0 auto 4rem auto; background: whitesmoke; border-radius: 10px">
+				</section>
+				<section>
+					<h3>Similarities</h3>
+					<ul>
+						<li>Open source</li>
+						<li>Component-based architecture</li>
+						<li>Client-side and server-side rendering</li>
+						<li>Performance</li>
+						<li>Easy to update</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h3>Learning Curve</h3>
+					</section>
+					<section>
+						<h3>Angular</h3>
+						<ul>
+							<li>TypeScript and Workflow</li>
+							<li>Components, modules and syntax</li>
+							<li>Dependency Injection</li>
+							<li>Optimizations</li>
+						</ul>
+					</section>
+					<section>
+						<h3>React</h3>
+						<ul>
+							<li>ES6 and JSX</li>
+							<li>"Everything is JavaScript"</li>
+							<li>State Management</li>
+							<li>Optimizations</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Data Binding</h3>
+					</section>
+					<section>
+						<h3>Angular</h3>
+						<p><small>(Two-way Data Binding)</small></p>
+						<img src="./images/data-binding-angular.jpg" alt="data-binding-angular" style="height: 300px; margin: 0 auto 4rem auto; background: whitesmoke; border-radius: 10px">
+					</section>
+					<section>
+						<h3>Categories of data binding in Angular</h3>
+						<p><small>One-way from data source to view target:</small></p>
+						<pre>
+							<code data-trim data-noescape>
+								{{expression}}
+							</code>
+							<code data-trim data-noescape>
+								[target]="expression"
+							</code>
+						</pre>
+						<p><small>One-way from view target to data source:</small></p>
+						<pre><code data-trim data-noescape>
+							(target)="statement"
+						</code></pre>
+						<p><small>Two-way:</small></p>
+						<pre><code data-trim data-noescape>
+							[(target)]="expression"
+						</code></pre>
+					</section>
+					<section>
+						<h3>React</h3>
+						<p><small>(One-way Data Binding)</small></p>
+						<img src="./images/react-one-way-data-flow.jpg" alt="data-binding-react" style="height: 400px; margin: 0 auto 4rem auto; background: whitesmoke; border-radius: 10px">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>State Management</h3>
+					</section>
+					<section>
+						<h3>Angular</h3>
+						<p><small>(NGRX)</small></p>
+						<img src="./images/angular-agrx-state-management.jpg" alt="data-binding-angular" style="height: 400px; margin: 0 auto 4rem auto; background: whitesmoke; border-radius: 10px">
+					</section>
+					<section>
+						<h3>React</h3>
+						<p><small>(REDUX)</small></p>
+						<img src="./images/react-redux-state-management.png" alt="data-binding-react" style="height: 400px; margin: 0 auto 4rem auto; background: whitesmoke; border-radius: 10px">
+					</section>
+				</section>
+				<section>
+					<h3>Angular</h3>
+					<p><small>Dependency Injection (DI)</small></p>
+					<pre>
+						<code data-trim data-noescape>
+							import { Injectable } from '@angular/core';
+							@Injectable({
+							  providedIn: 'root',
+							})
+							export class HeroService {
+							  constructor() { }
+							}
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>React</h3>
+					<p><small>Virtual DOM</small></p>
+					<img src="./images/virtual-DOM.webp" alt="data-binding-angular" style="height: 400px; margin: 0 auto 4rem auto; background: whitesmoke; border-radius: 10px">
+				</section>
+				<section>
+					<h3>Thank you for your attention!</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
